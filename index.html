@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>石巻専修大学 研究室訪問のご相談</title>
+<meta name="description" content="エコニクス様の採用連携に向け、石巻専修大の研究室訪問をお願いするご案内">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌲</text></svg>">
+<style>
+:root{
+  --bg:#FAF6EF;
+  --surface:#FFFFFF;
+  --ink:#23302B;
+  --ink-soft:#5B6B60;
+  --accent:#2F6F5E;
+  --accent-deep:#1E4F42;
+  --accent-soft:#E1EBE4;
+  --line:#E3DDCE;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#161B18;
+    --surface:#1D2420;
+    --ink:#EDEEE9;
+    --ink-soft:#A9B3AC;
+    --accent:#6FBBA2;
+    --accent-deep:#8FCDB6;
+    --accent-soft:#26332C;
+    --line:#33403A;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#161B18;
+  --surface:#1D2420;
+  --ink:#EDEEE9;
+  --ink-soft:#A9B3AC;
+  --accent:#6FBBA2;
+  --accent-deep:#8FCDB6;
+  --accent-soft:#26332C;
+  --line:#33403A;
+}
+
+*{box-sizing:border-box;}
+html{-webkit-text-size-adjust:100%;}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--ink);
+  font-family:"Zen Kaku Gothic New","Noto Sans JP",-apple-system,BlinkMacSystemFont,sans-serif;
+  line-height:1.85;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+.page{
+  max-width:680px;
+  margin:0 auto;
+  padding:clamp(2.5rem,8vw,5rem) 1.25rem clamp(3rem,10vw,6rem);
+}
+.eyebrow{
+  font-size:0.8rem;
+  letter-spacing:0.18em;
+  color:var(--accent);
+  text-transform:uppercase;
+  margin:0 0 0.9rem;
+  font-weight:600;
+}
+h1{
+  font-family:"Shippori Mincho","Noto Serif JP",serif;
+  font-size:clamp(1.5rem,6vw,2.35rem);
+  font-weight:600;
+  line-height:1.55;
+  margin:0 0 2.2rem;
+  text-wrap:balance;
+  color:var(--ink);
+}
+h1 .accent{color:var(--accent-deep);}
+
+.lede{
+  font-size:clamp(0.95rem,2.6vw,1.05rem);
+  color:var(--ink);
+  margin:0 0 2.6rem;
+}
+
+section{margin:0 0 2.4rem;}
+h2{
+  font-family:"Shippori Mincho","Noto Serif JP",serif;
+  font-size:clamp(1.02rem,3vw,1.15rem);
+  font-weight:600;
+  color:var(--accent-deep);
+  margin:0 0 1rem;
+  padding-bottom:0.6rem;
+  border-bottom:1px solid var(--line);
+}
+p{margin:0 0 1rem;font-size:clamp(0.92rem,2.4vw,0.98rem);color:var(--ink);}
+p:last-child{margin-bottom:0;}
+.soft{color:var(--ink-soft);}
+
+.org-card{
+  display:flex;
+  gap:1rem;
+  background:var(--surface);
+  border:1px solid var(--line);
+  border-radius:10px;
+  padding:1.2rem 1.3rem;
+  margin-top:1rem;
+  flex-wrap:wrap;
+}
+.org-card .mark{
+  flex:none;
+  width:2.6rem;height:2.6rem;
+  border-radius:8px;
+  background:var(--accent-soft);
+  color:var(--accent-deep);
+  display:flex;align-items:center;justify-content:center;
+  font-family:"Shippori Mincho",serif;
+  font-weight:600;
+  font-size:1rem;
+}
+.org-card .body{min-width:0;flex:1 1 200px;}
+.org-card .body p{font-size:0.92rem;margin:0;}
+.org-card .body .name{font-weight:600;font-size:0.98rem;margin-bottom:0.3rem;color:var(--ink);}
+
+.point-list{
+  list-style:none;
+  margin:0;padding:0;
+  display:flex;
+  flex-direction:column;
+  gap:0.9rem;
+}
+.point-list li{
+  display:flex;
+  gap:0.8rem;
+  font-size:0.95rem;
+}
+.point-list .bullet{
+  flex:none;
+  width:1.5rem;height:1.5rem;
+  margin-top:0.15rem;
+  border-radius:50%;
+  background:var(--accent-soft);
+  color:var(--accent-deep);
+  font-size:0.75rem;
+  font-weight:700;
+  display:flex;align-items:center;justify-content:center;
+}
+
+.cta{
+  text-align:center;
+  background:var(--surface);
+  border:1px solid var(--line);
+  border-radius:14px;
+  padding:clamp(1.8rem,6vw,2.6rem) 1.4rem;
+  margin:3rem 0 2.4rem;
+}
+.cta p{max-width:32rem;margin:0 auto 1.6rem;color:var(--ink-soft);font-size:0.93rem;}
+.cta a{
+  display:inline-block;
+  background:var(--accent-deep);
+  color:#FFFFFF;
+  text-decoration:none;
+  font-weight:600;
+  font-size:0.98rem;
+  padding:0.85rem 2.2rem;
+  border-radius:999px;
+  transition:transform 0.15s ease, box-shadow 0.15s ease;
+}
+.cta a:hover{transform:translateY(-1px);box-shadow:0 6px 16px -6px var(--accent-deep);}
+.cta a:focus-visible{outline:3px solid var(--accent);outline-offset:3px;}
+
+.signoff{
+  margin-top:3rem;
+  padding-top:1.8rem;
+  border-top:1px solid var(--line);
+  font-size:0.93rem;
+  color:var(--ink-soft);
+}
+.signoff .who{color:var(--ink);font-weight:600;margin-top:0.5rem;}
+
+@media (prefers-reduced-motion: reduce){
+  .cta a{transition:none;}
+}
+</style>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap">
+</head>
+<body>
+  <div class="page">
+    <p class="eyebrow">研究室訪問のご相談</p>
+    <h1>石巻の学生たちと、<br><span class="accent">北海道の環境コンサル企業</span>を<br>つなぐ機会をいただけませんか</h1>
+
+    <p class="lede">
+      突然のご連絡失礼いたします。私たちは、石巻を拠点に地域と企業をつなぐ活動をしている
+      フィッシャーマン・ジャパン（FJ）と DO FOR FISH（DFF）です。
+      現在ご縁のある企業様とともに、貴研究室の学生さんに新しい進路の選択肢をお届けできないかと考え、
+      ご相談のお時間をいただきたくご連絡しました。
+    </p>
+
+    <section>
+      <h2>私たちについて</h2>
+      <div class="org-card">
+        <div class="mark">FJ</div>
+        <div class="body">
+          <p class="name">フィッシャーマン・ジャパン ／ DO FOR FISH</p>
+          <p class="soft">石巻を拠点に、水産・地域産業と人をつなぐ活動を続けています。企業の採用支援から学生インターンのコーディネートまで、
+          現場に伴走しながら進めるのが私たちのやり方です。</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>ご紹介したい企業：株式会社エコニクス</h2>
+      <p>
+        北海道・札幌市を拠点に、自然環境の保全・再生、環境調査、化学分析といった専門性の高い事業を50年以上続けている総合環境コンサルタントです。
+        いま同社は「専門性の価値を、学生や求職者にきちんと伝わる言葉で届けたい」という課題に取り組んでおり、
+        実践型インターンシップなどを通じて、次世代の採用の土台づくりを進めています。
+      </p>
+    </section>
+
+    <section>
+      <h2>今回ご相談したいこと</h2>
+      <ul class="point-list">
+        <li><span class="bullet">1</span><span>貴研究室に伺い、エコニクスの事業内容と、これまでの学生連携の取り組みをご紹介させてください。</span></li>
+        <li><span class="bullet">2</span><span>環境・水産分野に関心のある学生さんにとって、エコニクスが進路の選択肢の一つになり得るか、率直なご意見をいただきたいです。</span></li>
+        <li><span class="bullet">3</span><span>ご興味を持っていただけたら、インターン受け入れなど、学生さんの採用につながる連携の形を一緒に考えさせてください。</span></li>
+      </ul>
+    </section>
+
+    <div class="cta">
+      <p>まずは30〜60分程度、研究室にお伺いしてお話しさせていただく機会をいただけますと幸いです。
+      もしご都合が合いそうでしたら、下記フォームから空いている日程を教えてください。</p>
+      <a href="#" id="form-link">訪問可能な日程を教える</a>
+    </div>
+
+    <div class="signoff">
+      <p>ご多忙のところ恐縮ですが、ご検討のほどよろしくお願いいたします。</p>
+      <p class="who">フィッシャーマン・ジャパン／DO FOR FISH</p>
+    </div>
+  </div>
+</body>
+</html>
