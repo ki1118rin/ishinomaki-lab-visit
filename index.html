@@ -4,40 +4,46 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>石巻専修大学 研究室訪問のご相談</title>
-<meta name="description" content="エコニクス様の採用連携に向け、石巻専修大の研究室訪問をお願いするご案内">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌲</text></svg>">
+<meta name="description" content="株式会社エコニクス様の採用連携に向け、石巻専修大の研究室訪問をお願いするご案内">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌊</text></svg>">
 <style>
 :root{
-  --bg:#FAF6EF;
+  --bg:#F4FAFB;
   --surface:#FFFFFF;
-  --ink:#23302B;
-  --ink-soft:#5B6B60;
-  --accent:#2F6F5E;
-  --accent-deep:#1E4F42;
-  --accent-soft:#E1EBE4;
-  --line:#E3DDCE;
+  --ink:#16232A;
+  --ink-soft:#5C6E76;
+  --accent:#007DBC;
+  --accent-deep:#005D8C;
+  --accent-soft:#E4F1F9;
+  --leaf:#2FA84C;
+  --leaf-soft:#E4F5E6;
+  --line:#D9E8EA;
 }
 @media (prefers-color-scheme: dark){
   :root:not([data-theme="light"]){
-    --bg:#161B18;
-    --surface:#1D2420;
-    --ink:#EDEEE9;
-    --ink-soft:#A9B3AC;
-    --accent:#6FBBA2;
-    --accent-deep:#8FCDB6;
-    --accent-soft:#26332C;
-    --line:#33403A;
+    --bg:#0F1B20;
+    --surface:#16262C;
+    --ink:#E8F1F3;
+    --ink-soft:#9AB0B7;
+    --accent:#4FB3E8;
+    --accent-deep:#7FCBEF;
+    --accent-soft:#1B333C;
+    --leaf:#63CE7E;
+    --leaf-soft:#1A2F20;
+    --line:#274048;
   }
 }
 :root[data-theme="dark"]{
-  --bg:#161B18;
-  --surface:#1D2420;
-  --ink:#EDEEE9;
-  --ink-soft:#A9B3AC;
-  --accent:#6FBBA2;
-  --accent-deep:#8FCDB6;
-  --accent-soft:#26332C;
-  --line:#33403A;
+  --bg:#0F1B20;
+  --surface:#16262C;
+  --ink:#E8F1F3;
+  --ink-soft:#9AB0B7;
+  --accent:#4FB3E8;
+  --accent-deep:#7FCBEF;
+  --accent-soft:#1B333C;
+  --leaf:#63CE7E;
+  --leaf-soft:#1A2F20;
+  --line:#274048;
 }
 
 *{box-sizing:border-box;}
@@ -46,32 +52,34 @@ body{
   margin:0;
   background:var(--bg);
   color:var(--ink);
-  font-family:"Zen Kaku Gothic New","Noto Sans JP",-apple-system,BlinkMacSystemFont,sans-serif;
+  font-family:"Noto Sans JP","Zen Kaku Gothic New",-apple-system,BlinkMacSystemFont,sans-serif;
   line-height:1.85;
   -webkit-font-smoothing:antialiased;
   overflow-x:hidden;
 }
 .page{
-  max-width:680px;
+  max-width:700px;
   margin:0 auto;
   padding:clamp(2.5rem,8vw,5rem) 1.25rem clamp(3rem,10vw,6rem);
 }
 .eyebrow{
+  font-family:"Quicksand","Noto Sans JP",sans-serif;
   font-size:0.8rem;
   letter-spacing:0.18em;
   color:var(--accent);
   text-transform:uppercase;
   margin:0 0 0.9rem;
-  font-weight:600;
+  font-weight:700;
 }
 h1{
-  font-family:"Shippori Mincho","Noto Serif JP",serif;
-  font-size:clamp(1.5rem,6vw,2.35rem);
-  font-weight:600;
-  line-height:1.55;
+  font-family:"Quicksand","Noto Sans JP",sans-serif;
+  font-size:clamp(1.5rem,6vw,2.3rem);
+  font-weight:700;
+  line-height:1.6;
   margin:0 0 2.2rem;
   text-wrap:balance;
   color:var(--ink);
+  letter-spacing:0.01em;
 }
 h1 .accent{color:var(--accent-deep);}
 
@@ -83,13 +91,23 @@ h1 .accent{color:var(--accent-deep);}
 
 section{margin:0 0 2.4rem;}
 h2{
-  font-family:"Shippori Mincho","Noto Serif JP",serif;
-  font-size:clamp(1.02rem,3vw,1.15rem);
-  font-weight:600;
+  font-family:"Quicksand","Noto Sans JP",sans-serif;
+  font-size:clamp(1rem,3vw,1.15rem);
+  font-weight:700;
   color:var(--accent-deep);
   margin:0 0 1rem;
   padding-bottom:0.6rem;
-  border-bottom:1px solid var(--line);
+  border-bottom:2px solid var(--line);
+  display:flex;
+  align-items:center;
+  gap:0.5rem;
+}
+h2::before{
+  content:"";
+  width:0.55rem;height:0.55rem;
+  border-radius:50%;
+  background:var(--leaf);
+  flex:none;
 }
 p{margin:0 0 1rem;font-size:clamp(0.92rem,2.4vw,0.98rem);color:var(--ink);}
 p:last-child{margin-bottom:0;}
@@ -112,13 +130,74 @@ p:last-child{margin-bottom:0;}
   background:var(--accent-soft);
   color:var(--accent-deep);
   display:flex;align-items:center;justify-content:center;
-  font-family:"Shippori Mincho",serif;
-  font-weight:600;
-  font-size:1rem;
+  font-family:"Quicksand",sans-serif;
+  font-weight:700;
+  font-size:0.9rem;
 }
 .org-card .body{min-width:0;flex:1 1 200px;}
 .org-card .body p{font-size:0.92rem;margin:0;}
-.org-card .body .name{font-weight:600;font-size:0.98rem;margin-bottom:0.3rem;color:var(--ink);}
+.org-card .body .name{font-weight:700;font-size:0.98rem;margin-bottom:0.3rem;color:var(--ink);}
+
+.company-card{
+  background:var(--surface);
+  border:1px solid var(--line);
+  border-radius:14px;
+  padding:1.6rem 1.6rem;
+}
+.company-card .tagline{
+  font-family:"Quicksand",sans-serif;
+  font-weight:700;
+  font-size:1.02rem;
+  color:var(--accent-deep);
+  margin:0 0 1rem;
+  padding:0.7rem 1rem;
+  background:var(--leaf-soft);
+  border-radius:8px;
+  text-wrap:balance;
+}
+.service-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:0.8rem;
+  margin:1.2rem 0;
+}
+.service-grid .item{
+  border:1px solid var(--line);
+  border-radius:8px;
+  padding:0.9rem 1rem;
+}
+.service-grid .item .label{
+  font-family:"Quicksand",sans-serif;
+  font-weight:700;
+  font-size:0.9rem;
+  color:var(--accent-deep);
+  margin:0 0 0.35rem;
+  display:block;
+}
+.service-grid .item .desc{
+  font-size:0.85rem;
+  color:var(--ink-soft);
+  margin:0;
+  line-height:1.6;
+}
+.company-meta{
+  display:flex;
+  flex-wrap:wrap;
+  gap:0.5rem 1.6rem;
+  font-size:0.85rem;
+  color:var(--ink-soft);
+  margin-top:1.2rem;
+  padding-top:1.1rem;
+  border-top:1px solid var(--line);
+}
+.company-meta strong{color:var(--ink);font-weight:700;}
+.company-card a.site-link{
+  color:var(--accent-deep);
+  text-decoration:none;
+  font-weight:700;
+  border-bottom:1px solid var(--accent-deep);
+}
+.company-card a.site-link:hover{opacity:0.75;}
 
 .point-list{
   list-style:none;
@@ -158,8 +237,9 @@ p:last-child{margin-bottom:0;}
   background:var(--accent-deep);
   color:#FFFFFF;
   text-decoration:none;
-  font-weight:600;
-  font-size:0.98rem;
+  font-weight:700;
+  font-family:"Quicksand",sans-serif;
+  font-size:1rem;
   padding:0.85rem 2.2rem;
   border-radius:999px;
   transition:transform 0.15s ease, box-shadow 0.15s ease;
@@ -174,7 +254,7 @@ p:last-child{margin-bottom:0;}
   font-size:0.93rem;
   color:var(--ink-soft);
 }
-.signoff .who{color:var(--ink);font-weight:600;margin-top:0.5rem;}
+.signoff .who{color:var(--ink);font-weight:700;margin-top:0.5rem;}
 
 @media (prefers-reduced-motion: reduce){
   .cta a{transition:none;}
@@ -183,7 +263,7 @@ p:last-child{margin-bottom:0;}
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap">
 </head>
 <body>
   <div class="page">
@@ -211,11 +291,39 @@ p:last-child{margin-bottom:0;}
 
     <section>
       <h2>ご紹介したい企業：株式会社エコニクス</h2>
-      <p>
-        北海道・札幌市を拠点に、自然環境の保全・再生、環境調査、化学分析といった専門性の高い事業を50年以上続けている総合環境コンサルタントです。
-        いま同社は「専門性の価値を、学生や求職者にきちんと伝わる言葉で届けたい」という課題に取り組んでおり、
-        実践型インターンシップなどを通じて、次世代の採用の土台づくりを進めています。
-      </p>
+      <div class="company-card">
+        <p class="tagline">「自然と人のいい関係。」人と自然が調和する豊かな未来をめざす、北海道・札幌市の総合環境コンサルタント</p>
+        <p>
+          創業から50年以上、現地調査から予測・評価、保全対策の立案まで、専門技術者チームが幅広い分野を一貫してサポートしてきた会社です。
+          主な事業は次の4つです。
+        </p>
+        <div class="service-grid">
+          <div class="item">
+            <span class="label">自然環境の保全・再生</span>
+            <p class="desc">藻場造成、洋上風力アセスメント、動植物保全、コウモリ調査など</p>
+          </div>
+          <div class="item">
+            <span class="label">環境調査</span>
+            <p class="desc">大気環境（騒音・振動など）、水環境の調査</p>
+          </div>
+          <div class="item">
+            <span class="label">化学分析</span>
+            <p class="desc">環境水分析、底質・土質分析</p>
+          </div>
+          <div class="item">
+            <span class="label">サスティナビリティ支援</span>
+            <p class="desc">環境・社会・経済の3つの観点から持続可能性をサポート</p>
+          </div>
+        </div>
+        <p class="soft">
+          専門性が高く社会的意義の大きい仕事をしている一方、その価値がまだ学生や求職者に十分伝わっていないという課題があり、
+          いま採用広報の土台づくりに力を入れています。
+        </p>
+        <div class="company-meta">
+          <span><strong>所在地</strong>　札幌市厚別区（泊事業所・マリンラボあり）</span>
+          <span><strong>詳細</strong>　<a class="site-link" href="https://econixe.co.jp/" target="_blank" rel="noopener">econixe.co.jp</a></span>
+        </div>
+      </div>
     </section>
 
     <section>
